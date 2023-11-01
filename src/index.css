@@ -8,11 +8,13 @@
 
 html,
 body {
-	background-color: #11151c;
+	/* background-color: #11151c; */
 	height: 100vh;
 	overflow-x: hidden;
 }
 
+#root,
+#app,
 #canvas {
 	position: fixed;
 	width: 100%;

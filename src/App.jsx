@@ -1,12 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import CarShowroom from "./components/CarShowroom";
 
-function App() {
-	const [count, setCount] = useState(0);
-
-	return <div id="app"></div>;
+export default function App() {
+	return (
+		<div id="app">
+			<Suspense fallback={null}>
+				<Canvas shadows>
+					<CarShowroom />
+				</Canvas>
+			</Suspense>
+		</div>
+	);
 }
-
-export default App;
